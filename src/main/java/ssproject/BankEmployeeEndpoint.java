@@ -17,6 +17,11 @@ public class BankEmployeeEndpoint implements IBankEndpoint {
 
 
     @Override
+    public double getBalance() {
+        return IBankEndpoint.super.getBalance();
+    }
+
+    @Override
     public double averageBalance() {
         return bank.getAccountBalance(userId);
     }
