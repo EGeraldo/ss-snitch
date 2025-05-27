@@ -17,7 +17,7 @@ public class BankEmployeeEndpoint implements IBankEndpoint {
 
 
     @Override
-    public double getBalance() {
+    public double getClientBalance(int accountId) {
         return IBankEndpoint.super.getBalance();
     }
 

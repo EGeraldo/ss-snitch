@@ -32,6 +32,10 @@ public interface IBankEndpoint {
         throw new UnsupportedOperationException();
     }
 
+    default double getClientBalance(int accountId) {
+        throw new UnsupportedOperationException();
+    }
+
     default double averageBalance() {
         throw new UnsupportedOperationException();
     }
